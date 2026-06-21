@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShadowLore — Dark Fantasy Anthology</title>
+  <meta name="description" content="Enter the realm where shadows breathe. ShadowLore is a dark fantasy interactive anthology where every choice shapes the fate of forgotten worlds.">
+  <meta property="og:title" content="ShadowLore — Dark Fantasy Anthology">
+  <meta property="og:description" content="Where shadows breathe and whispers hold power. Enter now.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1534447677768-be436bb09401?w=1200&q=80">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#05050a">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌑</text></svg>">
+</head>
+<body>
+
+  <!-- ======= NAV ======= -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo" aria-label="ShadowLore Home">
+      SHADOWLORE
+      <span>Dark Fantasy Anthology</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="how-to-play.html">How to Play</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="btn-audio" title="Play Ambient Sound" aria-label="Toggle ambient sound">🔇</button>
+      <a href="https://play.aidungeon.com/scenario/84A1C3aXaIb_/anthology" target="_blank" rel="noopener" class="btn-play-nav" aria-label="Play ShadowLore">Play Now</a>
+      <button class="btn-hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="nav-drawer" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="how-to-play.html">How to Play</a>
+    <a href="https://play.aidungeon.com/scenario/84A1C3aXaIb_/anthology" target="_blank" rel="noopener" class="btn-play-nav">Enter the Dark</a>
+  </div>
+
+  <!-- ======= HERO ======= -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-bg" role="img" aria-label="Dark fantasy castle ruins"></div>
+    <div class="hero-overlay"></div>
+    <canvas id="particles-canvas" aria-hidden="true"></canvas>
+    <div class="hero-content">
+      <p class="hero-eyebrow">An Interactive Dark Fantasy</p>
+      <h1 class="hero-title">ShadowLore</h1>
+      <p class="hero-tagline"><span id="typewriter"></span><span class="cursor">|</span></p>
+      <div class="hero-cta">
+        <a href="https://play.aidungeon.com/scenario/84A1C3aXaIb_/anthology" target="_blank" rel="noopener" class="btn-primary">Enter the Darkness</a>
+        <a href="about.html" class="btn-secondary">Discover the Lore</a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">Scroll</div>
+  </section>
+
+  <!-- ======= FEATURED TALES ======= -->
+  <section class="section" aria-labelledby="tales-heading">
+    <div class="section-inner">
+      <p class="section-label reveal">Featured Tales</p>
+      <h2 class="section-title reveal" id="tales-heading">The Anthology Awaits</h2>
+      <p class="section-desc reveal">Three realms of shadow. Three paths of fate. Each tale is a door — once opened, there is no turning back.</p>
+
+      <div class="card-grid">
+        <!-- Card 1 -->
+        <article class="card reveal">
+          <img class="card-img" src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=600&q=80" alt="The Hollow King — dark mystical forest" loading="lazy">
+          <div class="card-body">
+            <p class="card-tag">Chapter I</p>
+            <h3 class="card-title">The Hollow King</h3>
+            <p class="card-text">A forgotten monarch whose soul was traded for immortality now rules a kingdom of ash. You are summoned as his last witness — or his executioner.</p>
+            <a href="https://play.aidungeon.com/scenario/84A1C3aXaIb_/anthology" target="_blank" rel="noopener" class="card-link">Begin tale</a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card reveal">
+          <img class="card-img" src="https://images.unsplash.com/photo-1462275646964-a0e3386b89ae?w=600&q=80" alt="Daughters of the Rift — haunted dark forest" loading="lazy">
+          <div class="card-body">
+            <p class="card-tag">Chapter II</p>
+            <h3 class="card-title">Daughters of the Rift</h3>
+            <p class="card-text">Three sisters bound by a blood pact at the edge of the known world. A tear in reality grows wider with each moon. Only you can choose which sister is telling the truth.</p>
+            <a href="https://play.aidungeon.com/scenario/84A1C3aXaIb_/anthology" target="_blank" rel="noopener" class="card-link">Begin tale</a>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card reveal">
+          <img class="card-img" src="https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=600&q=80" alt="The Void Cartographer — dark cosmic sky" loading="lazy">
+          <div class="card-body">
+            <p class="card-tag">Chapter III</p>
+            <h3 class="card-title">The Void Cartographer</h3>
+            <p class="card-text">A mapmaker who charts lands that should not exist is hired for one final journey — into the space between worlds, where old gods are still dreaming.</p>
+            <a href="https://play.aidungeon.com/scenario/84A1C3aXaIb_/anthology" target="_blank" rel="noopener" class="card-link">Begin tale</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= LORE QUOTE ======= -->
+  <div class="lore-quote reveal">
+    <blockquote>
+      "In the realm between the living and the forgotten, every story is a wound that never healed. The shadows do not lie — they simply tell truths you were not ready to hear."
+    </blockquote>
+    <cite>— The Archivist of Dusk, ShadowLore Codex I</cite>
+  </div>
+
+  <!-- ======= FEATURES ======= -->
+  <section class="section" aria-labelledby="features-heading">
+    <div class="section-inner">
+      <p class="section-label reveal">What is ShadowLore?</p>
+      <h2 class="section-title reveal" id="features-heading">A Living, Breathing Anthology</h2>
+
+      <div class="features-grid">
+        <div class="feature-item reveal">
+          <div class="feature-icon">📖</div>
+          <h3 class="feature-title">Choice-Driven Narrative</h3>
+          <p class="feature-text">Every decision you make reshapes the story. Betray an ally, uncover a secret, or embrace the darkness — the anthology remembers everything.</p>
+        </div>
+        <div class="feature-item reveal">
+          <div class="feature-icon">🌑</div>
+          <h3 class="feature-title">Rich Dark Fantasy Lore</h3>
+          <p class="feature-text">Deep world-building across interconnected tales. Ancient gods, fallen empires, cursed bloodlines — the world of ShadowLore has centuries of history waiting to be discovered.</p>
+        </div>
+        <div class="feature-item reveal">
+          <div class="feature-icon">⚔️</div>
+          <h3 class="feature-title">Multiple Endings</h3>
+          <p class="feature-text">No two playthroughs are alike. Each chapter branches into dozens of possible outcomes — from redemption to ruin, from power to sacrifice.</p>
+        </div>
+        <div class="feature-item reveal">
+          <div class="feature-icon">🕯️</div>
+          <h3 class="feature-title">Atmospheric Storytelling</h3>
+          <p class="feature-text">Evocative prose that draws you deep into every shadowed corridor, every cursed throne room, every whispered prophecy.</p>
+        </div>
+        <div class="feature-item reveal">
+          <div class="feature-icon">🔮</div>
+          <h3 class="feature-title">AI-Powered World</h3>
+          <p class="feature-text">Powered by advanced AI narrative engines that respond to your choices in ways no pre-written script can. The story is truly yours.</p>
+        </div>
+        <div class="feature-item reveal">
+          <div class="feature-icon">🌍</div>
+          <h3 class="feature-title">Play Anywhere, Anytime</h3>
+          <p class="feature-text">Browser-based with no downloads required. Play on mobile, tablet, or desktop — the shadows follow you everywhere.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CTA BAND ======= -->
+  <section class="section" style="background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); text-align: center;" aria-label="Call to action">
+    <div class="section-inner">
+      <p class="section-label reveal" style="justify-content: center;">Begin Your Journey</p>
+      <h2 class="section-title reveal" style="max-width: 540px; margin: 0 auto 1rem;">The Darkness Has Been Waiting For You</h2>
+      <p class="section-desc reveal" style="margin: 0 auto 2.5rem;">No experience required. No right or wrong path. Only the choices you make — and their consequences.</p>
+      <a href="https://play.aidungeon.com/scenario/84A1C3aXaIb_/anthology" target="_blank" rel="noopener" class="btn-primary reveal">Enter ShadowLore</a>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <p class="footer-logo">SHADOWLORE</p>
+          <p class="footer-tagline"><em>"Where shadows breathe and whispers hold power."</em></p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigate</h4>
+          <ul role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="how-to-play.html">How to Play</a></li>
+            <li><a href="https://play.aidungeon.com/scenario/84A1C3aXaIb_/anthology" target="_blank" rel="noopener">Play Now</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <ul role="list">
+            <li><a href="legal.html">Terms &amp; Privacy</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 ShadowLore. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="legal.html">Terms of Service</a>
+          <a href="legal.html#privacy">Privacy Policy</a>
+          <a href="cookies.html">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======= COOKIE BANNER ======= -->
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-inner">
+      <div class="cookie-text">
+        <p><strong>We use cookies</strong> to enhance your experience on ShadowLore. By continuing, you agree to our <a href="cookies.html">Cookie Policy</a>.</p>
+      </div>
+      <div class="cookie-btns">
+        <button class="btn-cookie-accept" aria-label="Accept cookies">Accept All</button>
+        <button class="btn-cookie-decline" aria-label="Decline cookies">Decline</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
