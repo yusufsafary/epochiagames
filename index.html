@@ -46,7 +46,79 @@
     <script type="module" crossorigin src="/assets/index-DDkIV8F7.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-BAYn08T7.css">
   </head>
+  <style>
+    #easya-banner {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 99999;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 16px;
+      background: rgba(13, 8, 32, 0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      font-family: 'Inter', sans-serif;
+    }
+    #easya-banner img {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    #easya-banner .easya-info {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+    #easya-banner .easya-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.01em;
+    }
+    #easya-banner .easya-tagline {
+      font-size: 10px;
+      color: rgba(255,255,255,0.45);
+    }
+    #easya-banner .easya-divider {
+      width: 1px;
+      height: 24px;
+      background: rgba(255,255,255,0.15);
+      margin: 0 4px;
+    }
+    #easya-banner .easya-x-link {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      color: rgba(255,255,255,0.75);
+      font-size: 12px;
+      font-weight: 600;
+      transition: color 0.15s;
+    }
+    #easya-banner .easya-x-link:hover { color: #ffffff; }
+    #easya-banner .easya-x-link svg { flex-shrink: 0; }
+    #root { padding-top: 53px; }
+  </style>
   <body>
+    <div id="easya-banner">
+      <img src="/easya-kickstart.png" alt="EasyA Kickstart" />
+      <div class="easya-info">
+        <span class="easya-name">EasyA Kickstart</span>
+        <span class="easya-tagline">Buy into the future</span>
+      </div>
+      <div class="easya-divider"></div>
+      <a class="easya-x-link" href="https://x.com/Yugobyte_" target="_blank" rel="noopener noreferrer">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L2.25 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/>
+        </svg>
+        Builder @Yugobyte_
+      </a>
+    </div>
     <div id="root"></div>
   </body>
 </html>
